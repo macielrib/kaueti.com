@@ -36,8 +36,10 @@ const Rated = () => {
     <motion.section 
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
+      
       transition={{ duration: 0.6 }}
       className="h-full w-full bg-black py-8"
+      style={{ backgroundColor: 'black' }}
     >
       <motion.h1 
         initial={{ opacity: 0, y: 20 }}
