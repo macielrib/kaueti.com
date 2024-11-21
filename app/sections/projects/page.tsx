@@ -51,13 +51,13 @@ const Projetos = () => {
       title: "Legasse",
       description: "Empresa especializada em soluções de energia solar residencial e comercial.",
       image: "https://framerusercontent.com/images/vSJG9AAIGnYCJ7uwJZUrVzsaE.jpg?scale-down-to=512",
-      link: "#"
+      link: "https://legasse.com.br"
     },
     {
       title: "Spacefy",
       description: "Empresa especializada em soluções web e marketing digital para negócios.",
       image: "https://framerusercontent.com/images/IaA3MCPa8fujwB8UpCHS9cJyhH4.jpg?scale-down-to=512",
-      link: "#"
+      link: "https://spacefy.com.br"
     },
     {
       title: "Conversion",
