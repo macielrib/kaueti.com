@@ -130,8 +130,8 @@ const generateDenseGrid = (count: number, area: { width: number, height: number 
 
 const StatItem = ({ number, label }: { number: string, label: string }) => (
   <div className="flex items-center gap-1">
-    <span className="text-white font-medium">{number}</span>
-    <span className="text-[#ABABAB] text-sm">{label}</span>
+    <span className="text-white font-dmsans font-medium">{number}</span>
+    <span className="text-[#ABABAB] font-dmsans text-sm">{label}</span>
   </div>
 );
 
@@ -219,15 +219,18 @@ export default function Home() {
                   </div>
                   <ContactButton />
                   {/* Versão mobile do botão Fale Comigo */}
-                  <motion.button
+                  <motion.a
+                    href="https://wa.me/5551985410789"
                     className="px-5 py-2.5 bg-[#0D0D0D] text-white rounded-xl font-medium
-                              border border-[#292929] relative group overflow-hidden
+                              border border-[#292929] font-dmsans relative group overflow-hidden
                               block sm:hidden"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <span className="relative z-10">Fale Comigo</span>
-                  </motion.button>
+                  </motion.a>
                 </div>
               </div>
 
