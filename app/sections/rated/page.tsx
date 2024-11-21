@@ -38,8 +38,7 @@ const Rated = () => {
       animate={{ opacity: 1 }}
       
       transition={{ duration: 0.6 }}
-      className="h-full w-full bg-black py-8"
-      style={{ backgroundColor: 'black' }}
+      className="w-full py-4"
     >
       <motion.h1 
         initial={{ opacity: 0, y: 20 }}
