@@ -58,9 +58,9 @@ export default function Footer() {
 
         {/* Bottom Links */}
         <div className="flex items-center gap-2 text-xs text-white/60">
-          <a href="https://wa.me/5551985410789" target="_blank" rel="noopener noreferrer" className="hover:text-white/90 transition-colors">Fazer Orçamento</a>
+          <Link href="https://wa.me/5551985410789" target="_blank" rel="noopener noreferrer" className="hover:text-white/90 transition-colors">Fazer Orçamento</Link>
           <span>•</span>
-          <a href="https://spacefy.com.br/" target="_blank" rel="noopener noreferrer" className="hover:text-white/90 transition-colors">Spacefy</a>
+          <Link href="https://spacefy.com.br/" target="_blank" rel="noopener noreferrer" className="hover:text-white/90 transition-colors">Spacefy</Link>
           <span>•</span>
           <span>Criado por Kauê</span>
         </div>
