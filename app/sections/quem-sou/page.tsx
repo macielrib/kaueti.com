@@ -13,6 +13,20 @@ const CardGradient = () => (
 );
 
 const QuemSou = () => {
+  const scrollToProjects = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const projectsSection = document.getElementById('projects');
+    if (projectsSection) {
+      const offset = 80; // Ajuste este valor conforme necessário (espaço do header)
+      const targetPosition = projectsSection.getBoundingClientRect().top + window.pageYOffset - offset;
+      
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <section className="bg-black py-8 px-4">
       <div className="max-w-5xl mx-auto">
@@ -87,19 +101,18 @@ const QuemSou = () => {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  {/* Borda sutil */}
                   <div className="absolute inset-0 border border-white/10 rounded-xl" />
-                  
-                  {/* Gradiente de hover */}
                   <motion.div
                     className="absolute inset-0 bg-gradient-to-r from-white/5 via-white/10 to-transparent"
                     initial={{ x: '-100%' }}
                     whileHover={{ x: '100%' }}
                     transition={{ duration: 0.6 }}
                   />
-                  
-                  {/* Texto e ícone */}
-                  <Link href={'#projetos'} className="relative px-2 z-10 text-sm text-white/90 font-medium">
+                  <Link 
+                    href="#projects" 
+                    onClick={scrollToProjects}
+                    className="relative px-2 z-10 text-sm text-white/90 font-medium"
+                  >
                     Ver projetos
                   </Link>
                   <FaArrowRight className="relative z-10 text-white/70 group-hover:translate-x-0.5 

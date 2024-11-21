@@ -74,7 +74,7 @@ const Projetos = () => {
   ];
 
   return (
-    <section className="bg-black py-4 px-4">
+    <section className="bg-black py-4 px-4" id="projects">
       <div className="max-w-5xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
