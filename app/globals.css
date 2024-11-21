@@ -1,0 +1,25 @@
+/* Tailwind CSS imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styling */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* Customize body for light/dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  font-family: var(--font-satoshi), sans-serif; 
+  background-color: black;
+  color: var(--foreground);
+}
+
