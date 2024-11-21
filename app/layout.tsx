@@ -58,26 +58,33 @@ const satoshi = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Kauê | Software Developer",
-  description: "Software Developer especializado em criar experiências digitais inovadoras e intuitivas. Transformando ideias em soluções elegantes com performance e qualidade.",
-  keywords: ["Software Developer", "Desenvolvedor", "Frontend", "Backend", "Full Stack", "Web Development", "React", "Next.js", "TypeScript", "JavaScript"],
-  authors: [{ name: "Kauê" }],
+  title: "Kauê — Software Developer",
+  description: "Desenvolvedor apaixonado por criar experiências digitais intuitivas e elegantes, com foco em performance e qualidade.",
+  keywords: [
+    "Software Developer",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Frontend Development",
+    "Web Development",
+  ],
+  authors: [{ name: "Kauê", url: "https://github.com/kauecarv" }],
   creator: "Kauê",
   openGraph: {
     type: "website",
     locale: "pt_BR",
     url: "https://kaueds.com",
-    title: "Kauê | Software Developer",
-    description: "Software Developer especializado em criar experiências digitais inovadoras e intuitivas.",
-    siteName: "@kauecarv",
+    title: "Kauê — Software Developer",
+    description: "Desenvolvedor apaixonado por criar experiências digitais intuitivas e elegantes.",
+    siteName: "Kauê",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kauê | Software Developer",
-    description: "Software Developer especializado em criar experiências digitais inovadoras e intuitivas.",
+    title: "Kauê — Software Developer",
+    description: "Desenvolvedor apaixonado por criar experiências digitais intuitivas e elegantes.",
     creator: "@kaue",
   },
-  themeColor: "#0D0D0D",
+  themeColor: "#18181B",
 };
 
 export default function RootLayout({
