@@ -72,7 +72,7 @@ const QuemSou = () => {
             {/* Conteúdo */}
             <div className="flex-1 space-y-6">
               <motion.h2 
-                className="text-4xl md:text-5xl font-medium text-white"
+                className="text-4xl md:text-5xl font-medium font-dmsans text-white"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
@@ -81,7 +81,7 @@ const QuemSou = () => {
               </motion.h2>
 
               <motion.p
-                className="text-[#ABABAB] text-base md:text-lg leading-relaxed max-w-[540px]"
+                className="text-[#ABABAB] text-base md:text-lg font-dmsans leading-relaxed max-w-[540px]"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
@@ -111,7 +111,7 @@ const QuemSou = () => {
                   <Link 
                     href="#projects" 
                     onClick={scrollToProjects}
-                    className="relative px-2 z-10 text-sm text-white/90 font-medium"
+                    className="relative px-2 z-10 text-sm text-white/90 font-medium font-dmsans"
                   >
                     Ver projetos
                   </Link>
@@ -139,7 +139,7 @@ const QuemSou = () => {
                   />
                   
                   {/* Texto e ícone */}
-                  <Link href={'https://spacefy.com.br/'} target="_blank" className="relative px-2 z-10 text-sm text-white/90 font-medium">
+                  <Link href={'https://spacefy.com.br/'} target="_blank" className="relative px-2 z-10 text-sm text-white/90 font-medium font-dmsans">
                     Minha agência
                   </Link>
                   <FaBuilding className="relative z-10 text-white/70 group-hover:translate-x-0.5 

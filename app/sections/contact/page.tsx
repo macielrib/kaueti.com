@@ -25,10 +25,10 @@ const ProductInfo = ({ title, price, description }: {
   >
     <div className="space-y-1">
       <div className="flex items-center gap-2">
-        <h3 className="text-white text-sm">{title}</h3>
-        <span className="text-[#ABABAB] text-sm">{price}</span>
+        <h3 className="text-white font-poppins text-sm">{title}</h3>
+        <span className="text-[#ABABAB] font-poppins text-sm">{price}</span>
       </div>
-      <p className="text-[#ABABAB] text-xs leading-relaxed pr-4">{description}</p>
+      <p className="text-[#ABABAB] text-xs font-dmsans leading-relaxed pr-4">{description}</p>
     </div>
   </motion.div>
 );
@@ -50,7 +50,7 @@ const Contact = () => {
             {/* Conteúdo - Agora centralizado */}
             <div className="flex-1 space-y-6">
               <motion.h2 
-                className="text-4xl md:text-5xl font-medium text-white"
+                className="text-4xl md:text-5xl font-medium font-dmsans text-white"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
@@ -83,7 +83,7 @@ const Contact = () => {
                   <motion.button
                     className="w-full px-6 py-1.5 bg-transparent text-white rounded-xl 
                               relative overflow-hidden group font-medium text-sm
-                              border border-white/10 hover:bg-white/5 transition-colors"
+                              border border-white/10 hover:bg-white/5 font-dmsans transition-colors"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
