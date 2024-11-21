@@ -30,7 +30,7 @@ const ProjectCard = ({ title, description, image, link }: {
 
       <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
         <div className="flex items-center gap-3">
-          <h3 className="text-2xl font-medium text-white">{title}</h3>
+          <h3 className="text-2xl font-medium font-dmsans text-white">{title}</h3>
           <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <div className="bg-white/10 backdrop-blur-sm p-1.5 rounded-full">
               <HiArrowRight 
@@ -39,7 +39,7 @@ const ProjectCard = ({ title, description, image, link }: {
             </div>
           </div>
         </div>
-        <p className="text-gray-300 mt-2">{description}</p>
+        <p className="text-gray-300 font-dmsans mt-2">{description}</p>
       </div>
     </Link>
   </motion.div>
@@ -48,14 +48,14 @@ const ProjectCard = ({ title, description, image, link }: {
 const Projetos = () => {
   const projects = [
     {
-      title: "Solopreneur",
-      description: "Personal website for a tech entrepreneur.",
+      title: "Legasse",
+      description: "Empresa especializada em soluções de energia solar residencial e comercial.",
       image: "https://framerusercontent.com/images/vSJG9AAIGnYCJ7uwJZUrVzsaE.jpg?scale-down-to=512",
       link: "#"
     },
     {
-      title: "Limitless",
-      description: "Digital agency portfolio showcase.",
+      title: "Spacefy",
+      description: "Empresa especializada em soluções web e marketing digital para negócios.",
       image: "https://framerusercontent.com/images/IaA3MCPa8fujwB8UpCHS9cJyhH4.jpg?scale-down-to=512",
       link: "#"
     },
